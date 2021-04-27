@@ -3,7 +3,7 @@ A basic rasa setup which can be built upon
 
 All of the contents for this file have been picked up from [Rasa Masterclass](https:**//info.rasa.com/masterclass).
 
-This is a TL;DR version. (Yes, the documentation is longer.)
+This is a TL;DR version. 
 
 ------------
 
@@ -186,5 +186,4 @@ Useful resources:
 6. [Rasa Action Server](https://rasa.com/docs/action-server) - Runs custom actions for a Rasa Open Source conversational assistant.
 
 The masterclass provides additional customizations to various aspects of the bot, which are useful to checkout!
-
-Thanks! 
+ 
