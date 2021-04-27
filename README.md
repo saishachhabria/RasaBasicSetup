@@ -58,6 +58,14 @@ If you're having issues try the following:
 
 Try out the command format you usually use on your device.
 
+Make sure to use the same command format for each time you have to run a rasa command.
+
+Eg. 
+
+If you used ```python3 -m pip install rasa-x --extra-index-url https://pypi.rasa.com/simple``` to install
+
+The command to run rasa would be ```python3 -m rasa ... ```
+
 ------------
 
 ### **Step 2:** Setup a base project
@@ -76,11 +84,12 @@ By default, rasa init trains a simple assistant called moodbot which will ask yo
 
 This represents the kind of conversations the chatbot will have with the user. The main idea of this step is to delineate the conversation flow of your assistant.
 
-For Rasa, all of this must be setup in the following 2 files:
-1. **nlu.md** - the file containing NLU model training examples. This includes intents, which are user goals, and example utterances that represent those intents. The NLU training data also labels the entities, or important keywords, the assistant should extract from the example utterance.
-2. **stories.md** -the file containing story data. Stories are example end-to-end conversations.
+For Rasa, all of this must be setup in the following 3 files (Refer to [Rasa Docs](https://rasa.com/docs/rasa)):
+1. **nlu.yml** - The file containing NLU model training examples. This includes intents, which are user goals, and example utterances that represent those intents. The NLU training data also labels the entities, or important keywords, the assistant should extract from the example utterance.
+2. **stories.yml** - The file containing story data. Stories are example end-to-end conversations.
+3. **rules.yml** - Rules are a type of training data used to train your assistant's dialogue management model. Rules describe short pieces of conversations that should always follow the same path.
 
-The format can be found [here]().
+The format can be found [here](https://rasa.com/docs/rasa/training-data-format).
 
 **Important recap and syntax:**
 
@@ -165,12 +174,17 @@ The format can be found [here]().
 
 ------------
 
-### **Step 5:**
+That's all that's needed for the basic Rasa setup, and that's all the base you need to go on and build a great customized chatbot.
 
-------------
-### **Step 6:**
+Useful resources:
+1. [Installation Guide](https://rasa.com/docs/rasa/installation)
+2. [Rasa Glossary](https://rasa.com/docs/rasa/glossary)
+3. [CLI Cheatsheet](https://rasa.com/docs/rasa/command-line-interface)
+4. [Training Data Format](https://rasa.com/docs/rasa/training-data-format)
+5. [Model Configuration](https://rasa.com/docs/rasa/model-configuration)
+6. [Rasa X](https://rasa.com/docs/rasa-x/) - For conversation driven development
+6. [Rasa Action Server](https://rasa.com/docs/action-server) - Runs custom actions for a Rasa Open Source conversational assistant.
 
-------------
-### **Step 7:**
+The masterclass provides additional customizations to various aspects of the bot, which are useful to checkout!
 
-------------
+Thanks! 
